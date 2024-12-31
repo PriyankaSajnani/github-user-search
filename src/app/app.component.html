@@ -1,0 +1,4 @@
+<input type="text" [(ngModel)]="username" (keyup.enter)="searchUser()">
+<button (click)="searchUser()">Search</button>
+
+<app-user-details *ngIf="user" [user]="user"></app-user-details>

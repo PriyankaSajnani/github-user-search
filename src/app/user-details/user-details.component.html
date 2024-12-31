@@ -1,0 +1,8 @@
+<div *ngIf="user">
+    <img src="{{ user.avatar_url }}" alt="{{ user.login }}">
+    <h2>{{ user.name }}</h2>
+    <p>Username: {{ user.login }}</p>
+    <p>Public Repos: {{ user.public_repos }}</p>
+    <p>Followers: {{ user.followers }}</p>
+    <a href="{{ user.html_url }}">Profile Link</a>
+</div>
